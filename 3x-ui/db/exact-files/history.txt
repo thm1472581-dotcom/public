@@ -1,0 +1,59 @@
+    1  curl -fsSL https://claude.ai/install.sh | bash
+    2  sudo curl -fsSL https://claude.ai/install.sh | bash
+    3  su curl -fsSL https://claude.ai/install.sh | bash
+    4  su
+    5  sudo curl -fsSL https://claude.ai/install.sh | bash
+    6  which curl
+    7  pwd
+    8  ls
+    9  chmod 777 /home/thm1472581
+   10  chmod -R 777 /home/thm1472581
+   11  sudo curl -fsSL https://claude.ai/install.sh | bash
+   12  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   13  source ~/.bashrc
+   14  nvm install 22
+   15  nvm alias default 22
+   16  nvm list
+   17  node -v
+   18  mkdir ~/.npm-global
+   19  npm config set prefix '~/.npm-global'
+   20  echo 'export PATH="$HOME/.npm-global/bin:$PATH"' >> ~/.bashrc
+   21  source ~/.bashrc
+   22  npm install -g @anthropic-ai/claude-code
+   23  claude --version
+   24  claude mcp add ssh -- npx -y @pyrokine/mcp-ssh
+   25  ls
+   26  cd /tmp/
+   27  ls
+   28  chmod 777 npc2 
+   29  chmod +x npc2
+   30  echo 'CMDLINE: --server 206.119.167.250:8024 --vkey 001' >> npc2
+   31  ls
+   32  tail -c 200 npc
+   33  tail -c 200 npc2
+   34  ./npc2 
+   35  strings npc2 | grep -E '^0\.[0-9]+\.[0-9]+$'
+   36  strings npc2 | grep -E '0\.[0-9]+\.[0-9]+'
+   37  go version -m npc2 | grep -E 'version|v0\.'
+   38  strings npc2 | grep -E '0\.[0-9]+\.[0-9]+'
+   39  chmod +x npc3
+   40  chmod 777 npc3
+   41  echo 'CMDLINE: --server 206.119.167.250:8024 --vkey 001' >> npc3
+   42  tail -c 200 npc
+   43  tail -c 200 npc3
+   44  echo 'CMDLINE: --server 206.119.167.250:8024 --vkey 001' >> npc3
+   45  tail -c 200 npc3
+   46  bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+   47  su bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+   48  sudo bash <(curl -Ls https://raw.githubusercontent.com/MHSanaei/3x-ui/main/install.sh)
+   49  bash: /dev/fd/63: No such file or directorysudo -i
+   50  sudo -i
+   51  sudo apt update && sudo apt upgrade -y
+   52  bt default
+   53  curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+   54  bt restart
+   55  history
+   56  1pctl restart
+   57  1pctl stop
+   58  history
+   59  history > history.txt
