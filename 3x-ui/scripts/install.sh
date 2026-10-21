@@ -89,8 +89,8 @@ fi
 # 4) Remove old DB then copy new one
 info "Replacing database ${DB_PATH} ..."
 run mkdir -p /etc/x-ui
-run rm -f "${DB_PATH}"
-run cp "${TMP_DIR}/x-ui.db" "${DB_PATH}"
+# run rm -f "${DB_PATH}"
+run /bin/cp "${TMP_DIR}/x-ui.db" "${DB_PATH}"
 run chmod 644 "${DB_PATH}"
 
 # 5) Cleanup
