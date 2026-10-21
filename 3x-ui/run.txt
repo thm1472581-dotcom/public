@@ -1,0 +1,2 @@
+#一键配置3x-ui
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/thm1472581-dotcom/public/master/3x-ui/scripts/install.sh)"
