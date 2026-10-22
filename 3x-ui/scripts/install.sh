@@ -66,7 +66,7 @@ echo "=========================================="
 # 1) Install official 3x-ui (non-interactive; panel creds overwritten by backup DB)
 info "Installing official 3x-ui ..."
 curl -fsSL "${OFFICIAL_INSTALL_URL}" -o "${OFFICIAL_INSTALL_TMP}"
-run sudo x-ui uninstall
+run sudo x-ui uninstall || true
 # run env XUI_NONINTERACTIVE=1 bash "${OFFICIAL_INSTALL_TMP}"
 run env XUI_NONINTERACTIVE=1 bash "${OFFICIAL_INSTALL_TMP}" v3.4.2
 run rm -f "${OFFICIAL_INSTALL_TMP}"
