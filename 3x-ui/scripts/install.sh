@@ -66,7 +66,9 @@ echo "=========================================="
 # 1) Install official 3x-ui (non-interactive; panel creds overwritten by backup DB)
 info "Installing official 3x-ui ..."
 curl -fsSL "${OFFICIAL_INSTALL_URL}" -o "${OFFICIAL_INSTALL_TMP}"
-run env XUI_NONINTERACTIVE=1 bash "${OFFICIAL_INSTALL_TMP}"
+run sudo x-ui uninstall || true
+# run env XUI_NONINTERACTIVE=1 bash "${OFFICIAL_INSTALL_TMP}"
+run env XUI_NONINTERACTIVE=1 bash "${OFFICIAL_INSTALL_TMP}" v3.4.2
 run rm -f "${OFFICIAL_INSTALL_TMP}"
 
 # 2) Stop service before replacing DB
@@ -89,8 +91,8 @@ fi
 # 4) Remove old DB then copy new one
 info "Replacing database ${DB_PATH} ..."
 run mkdir -p /etc/x-ui
-run rm -f "${DB_PATH}"
-run cp "${TMP_DIR}/x-ui.db" "${DB_PATH}"
+# run rm -f "${DB_PATH}"
+run /bin/cp "${TMP_DIR}/x-ui.db" "${DB_PATH}"
 run chmod 644 "${DB_PATH}"
 
 # 5) Cleanup
